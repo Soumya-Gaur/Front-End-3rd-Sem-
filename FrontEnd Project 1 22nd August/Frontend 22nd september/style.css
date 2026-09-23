@@ -1,0 +1,308 @@
+/* ===== Shared styles for Frontend Lab Assignment 2 ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  margin: 0;
+  padding: 30px 15px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #1a3c6e;
+  margin-top: 0;
+}
+
+/* ---------- Tab navigation (combined index.html) ---------- */
+nav.tabnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #d5dce5;
+  padding-bottom: 15px;
+}
+
+.tab-btn {
+  background: #eef1f6;
+  color: #1a3c6e;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: #d5dce5;
+}
+
+.tab-btn.active {
+  background: #1a3c6e;
+  color: #fff;
+}
+
+.tab-section {
+  display: none;
+}
+
+.tab-section.active {
+  display: block;
+}
+
+.section-title {
+  text-align: center;
+  color: #1a3c6e;
+  margin-top: 0;
+}
+
+/* ---------- Table (Marksheet) ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #1a3c6e;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f5f9;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #e8edf3;
+}
+
+.student-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+/* ---------- Resume ---------- */
+.resume-header {
+  text-align: center;
+  border-bottom: 3px solid #1a3c6e;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.resume-header h1 {
+  margin-bottom: 5px;
+}
+
+.resume-header p {
+  margin: 3px 0;
+  color: #555;
+}
+
+.resume section {
+  margin-bottom: 22px;
+}
+
+.resume h2 {
+  color: #1a3c6e;
+  border-bottom: 2px solid #d5dce5;
+  padding-bottom: 4px;
+  font-size: 19px;
+}
+
+.resume ul {
+  padding-left: 20px;
+}
+
+.job-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.job-meta {
+  font-style: italic;
+  color: #666;
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-list li {
+  background: #1a3c6e;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+/* ---------- Menu ---------- */
+.menu-category h2 {
+  color: #1a3c6e;
+  border-bottom: 2px solid #d5dce5;
+  padding-bottom: 5px;
+  margin-top: 25px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: 600;
+}
+
+.item-desc {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  font-weight: normal;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #1a3c6e;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
+/* ---------- Forms (Registration + Login) ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+fieldset {
+  border: 1px solid #d5dce5;
+  border-radius: 6px;
+  padding: 15px 18px;
+}
+
+legend {
+  font-weight: bold;
+  color: #1a3c6e;
+  padding: 0 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  padding: 9px 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #1a3c6e;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.radio-group label, .checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+button, input[type="submit"] {
+  background-color: #1a3c6e;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #14315a;
+}
+
+.login-box {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.form-note {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.form-note a {
+  color: #1a3c6e;
+}
